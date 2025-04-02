@@ -1,0 +1,19 @@
+    .button{
+        -fx-background-color: #ffc0cb ;
+        -fx-text-fill: purple ;
+        -fx-border-color: purple;
+        -fx-border-radius: 25;
+        -fx-background-radius: 25;
+       /* -fx-padding: 60, 15, 10, 60;*/
+    }
+
+    #fontButton{
+        -fx-font: bold italic 20pt "Arial" ;
+        -fx-background-color: white;
+        -fx-text-fill: purple;
+    }
+
+    .button:hover {
+    -fx-background-color: c71585;
+    }
+/*pra apalicarle un estilo  aun solo eleemnto se hace mediante unn identificador utilizando "#"

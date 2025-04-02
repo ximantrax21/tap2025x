@@ -1,0 +1,9 @@
+CREATE TABLE clientes(
+    idCte int auto_increment,
+    nomCte varchar(100),
+    telCte char(10),
+    direccion varchar(150),
+    emailCte varchar (50) unique,
+    CONSTRAINT pk_cte PRIMER KEY(idCte)
+
+    )
