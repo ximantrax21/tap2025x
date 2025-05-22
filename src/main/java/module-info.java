@@ -1,7 +1,7 @@
 module com.example.tap2025x {
     requires javafx.controls;
     requires javafx.fxml;
-
+    requires javafx.media;
 
     opens com.example.tap2025x to javafx.fxml;
     requires org.kordamp.bootstrapfx.core;

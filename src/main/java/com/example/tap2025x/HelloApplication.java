@@ -34,7 +34,6 @@ public class HelloApplication extends Application {
         mitRompecabezas.setOnAction(actionEvent -> new Rompecabezas());
         menCompetencia1=new Menu("Competencia 1");
         menCompetencia1.getItems().addAll(mitCalculadora, mitRestaurante, mitRompecabezas);
-
         mitHilos= new MenuItem("Hilos");
         mitHilos.setOnAction(actionEvent -> new Celayork());
         menCompetencia2=new Menu("Competencia 2");
@@ -48,24 +47,27 @@ public class HelloApplication extends Application {
     @Override
 
     public void start(Stage stage) throws IOException {
-      /*  new Hilo("Ruta Pinos").start();
+
+        new Hilo("Ruta Pinos").start();
         new Hilo("Ruta Laureles").start();
         new Hilo("Ruta San Juan de la Vega").start();
         new Hilo("Ruta Monte Blanco").start();
-        new Hilo("Ruta Tenerias").start();*/
+        new Hilo("Ruta Teneria").start();
+
+        Conexion.createConnection();
         CrerUI();
-        //Conexion.CrearConexion();
-        //vBox= new VBox();
-        stage.setTitle("Hola Mundo de Eventos <3");
+        stage.setTitle("Hola Mundo de Eventos :)");
         stage.setScene(scena);
         stage.show();
-        stage.setMaximized(true); //para maximizar la ventana
+        stage.setMaximized(true);
     }
 
     public static void main(String[] args) {
         launch();
     }
-
+    void clickEvent(){
+        System.out.println("Evento desde un metodo :)");
+    }
 }
 /*
 //se instancia de lo oparticular o a lo general
